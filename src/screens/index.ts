@@ -1,3 +1,3 @@
-export { default as Make } from './Make';
 export { default as Meet } from './Meet';
+export { default as Share } from './Share';
 export { default as Start } from './Start';
