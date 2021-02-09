@@ -1,27 +1,21 @@
 import React from 'react';
-import { GlobalStyles, HeaderLogo } from './components';
+import styled from 'styled-components';
+
+import { GlobalStyles, Header } from './components';
+import Scheduler from './components/Scheduler/Scheduler';
+
+const Container = styled.div`
+  margin: 1em auto;
+  max-width: 60em;
+`;
 
 function App() {
   return (
-    <>
+    <Container>
       <GlobalStyles />
-      <div className="App">
-        <header className="App-header">
-          <HeaderLogo />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    </>
+      <Header />
+      <Scheduler />
+    </Container>
   );
 }
 

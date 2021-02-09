@@ -81,6 +81,12 @@ const GlobalStyles = createGlobalStyle`
   th {
     padding: 0;
   }
+
+  body {
+    background: #f2f2f2;
+    font-size: 1em;
+    line-height: 1.375;
+  }
 `;
 
 export default GlobalStyles;

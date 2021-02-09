@@ -2,8 +2,8 @@ import React from 'react';
 
 import logo from './logo.svg';
 
-const HeaderLogo: React.FC = () => (
+const Logo: React.FC = () => (
   <img src={logo} />
 );
 
-export default HeaderLogo;
+export default Logo;
