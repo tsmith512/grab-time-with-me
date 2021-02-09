@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { GlobalStyles, Header } from './components';
+import { Routes } from './routes';
 import Scheduler from './components/Scheduler/Scheduler';
 
 const Container = styled.div`
@@ -14,7 +15,7 @@ function App() {
     <Container>
       <GlobalStyles />
       <Header />
-      <Scheduler />
+      <Routes />
     </Container>
   );
 }

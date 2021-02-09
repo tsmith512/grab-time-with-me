@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const goToTimes = () => {
@@ -28,15 +29,7 @@ const Availability: React.FC = () => {
       <Container>
         <p>Availability Container</p>
         <button onClick={() => (setStage("day"))}>Test Placeholder: Pick a different day</button>
-        <button onClick={() => (setStage("punk"))}>Test Placeholder: Pick this time</button>
-      </Container>
-    );
-  }
-
-  else if (stage === "punk") {
-    return (
-      <Container>
-        <p>Need to route to next step</p>
+        <Link to="/meet/">Test Placeholder: Pick this time</Link>
       </Container>
     );
   }
