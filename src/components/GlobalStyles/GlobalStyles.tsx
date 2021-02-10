@@ -117,6 +117,10 @@ const GlobalStyles = createGlobalStyle`
     box-shadow: none;
   }
 
+  .CalendarDay {
+    font-size: 16px;
+  }
+
   .CalendarDay:hover,
   .CalendarDay__highlighted_calendar:hover {
     background: #44749D;
@@ -142,6 +146,24 @@ const GlobalStyles = createGlobalStyle`
     background: #E04D4D;
     color: #fff;
     border-color: #BF3B3B;
+  }
+
+  .CalendarMonth_caption {
+    font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .CalendarMonth_table {
+    font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
+    font-style: normal;
+    font-weight: 300;
+  }
+
+  .DayPicker_weekHeader {
+    font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
+    font-style: normal;
+    font-weight: 300;
   }
 
   #day_input {

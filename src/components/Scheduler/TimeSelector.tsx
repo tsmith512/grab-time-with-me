@@ -9,13 +9,18 @@ const TimeOptions = styled.div`
 const Option = styled.button`
   display: block;
   margin: 0.5em auto;
-  width: 12em;
-  padding: 1em 0.5em;
+  width: 8em;
+  padding: 0.75em 0.25em;
 
   border: 1px solid #44749D;
   border-radius: 3px;
   color: #44749D;
   background: #EFF7FF;
+
+  font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.25em;
 
   &:hover {
     background: #fff;

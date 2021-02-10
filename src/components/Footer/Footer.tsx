@@ -8,8 +8,9 @@ const Container = styled.header`
 `;
 
 const FooterText = styled.h1`
-  font-size: 0.875em;
-  font-style: italic;
+  font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
+  font-style: normal;
+  font-weight: 300;
   color: #8E8981;
   text-shadow: 1px 1px 0 white;
 `;

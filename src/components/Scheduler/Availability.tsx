@@ -16,6 +16,10 @@ const StageHeadline = styled.p`
   text-align: center;
   font-size: 1.25em;
   margin: 1em;
+
+  font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
+  font-style: normal;
+  font-weight: 500;
 `;
 
 const Button = styled.button`
@@ -26,9 +30,12 @@ const Button = styled.button`
 const Note = styled.p`
   text-align: center;
   font-size: 0.875em;
-  font-style:italic;
   margin-top: -1.25em;
   margin-bottom: 2em;
+
+  font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
+  font-style: normal;
+  font-weight: 300;
 `;
 
 const availabilityToday = (dateTest: moment.Moment) => {

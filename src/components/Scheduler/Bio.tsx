@@ -9,14 +9,21 @@ const Container = styled.header`
 `;
 
 const BioName = styled.h1`
-  font-size: 2em;
-  font-weight: bold;
+  font-size: 3em;
   color: #44749D;
+
+  font-family: "Inkwell Sans A", "Inkwell Sans B";
+  font-style: italic;
+  font-weight: 800;
 `;
 
 const BioMeetingType = styled.h2`
   font-size: 1.25em;
   color: #44749D;
+
+  font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
+  font-style: normal;
+  font-weight: 300;
 `;
 
 const Bio: React.FC = () => {

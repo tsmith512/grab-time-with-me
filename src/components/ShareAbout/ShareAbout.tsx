@@ -29,25 +29,42 @@ const Panel = styled.div`
 `;
 
 const Headline = styled.h1`
-  font-size: 1.5em;
+  font-size: 3em;
   font-weight: bold;
   color: #44749D;
+
+  font-family: "Inkwell Sans A", "Inkwell Sans B";
+  font-style: italic;
+  font-weight: 800;
 `;
 
 const Subhead = styled.h2`
   font-size: 1.25em;
   color: #999;
   color: #44749D;
+
+  font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
+  font-style: normal;
+  font-weight: 300;
 `;
 
 const Explanation = styled.p`
   margin: 1em auto;
-  max-width: 40em;
+  font-size: 1.25em;
   font-weight: bold;
+
+  font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
+  font-style: normal;
+  font-weight: 500;
 `;
 
 const Group = styled.div`
   padding: 1em;
+
+  font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.25em;
 
   label {
     color: #44749D;
@@ -58,6 +75,10 @@ const Input = styled.input`
   display: block;
   width: 100%;
   margin: 0.25em;
+
+  font-family: "Inkwell Sans A", "Inkwell Sans B";
+  font-style: normal;
+  font-weight: 500;
 
   padding: 1em;
   border: 1px solid #C6D4E1;

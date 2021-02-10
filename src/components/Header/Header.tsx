@@ -16,9 +16,12 @@ const Container = styled.header`
 `;
 
 const Headline = styled.h1`
-  font-size: 2em;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-size: 3em;
+  letter-spacing: -1px;
+
+  font-family: "Inkwell Sans A", "Inkwell Sans B";
+  font-style: italic;
+  font-weight: 800;
 `;
 
 const LogoBox = styled.div`
