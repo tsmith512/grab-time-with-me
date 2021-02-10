@@ -30,7 +30,7 @@ const Panel = styled.div`
 `;
 
 const Headline = styled.h1`
-  font-size: 4em;
+  font-size: 3.5em;
   font-weight: bold;
   color: #008C9E;
 
@@ -40,7 +40,7 @@ const Headline = styled.h1`
 `;
 
 const Subhead = styled.h2`
-  font-size: 1.25em;
+  font-size: 1.125em;
   color: #999;
   color: #008C9E;
 
@@ -120,7 +120,7 @@ const ShareAbout: React.FC = () => {
       <Panel>
 
         <Explanation>
-          Let your cold calls schedule a time with you, too!
+          Never give up on those cold callers. Make your own invite link.
         </Explanation>
 
         <Group>

@@ -9,7 +9,7 @@ const Container = styled.header`
 `;
 
 const BioName = styled.h1`
-  font-size: 4em;
+  font-size: 3.5em;
   color: #008C9E;
 
   font-family: "Sagittarius A", "Sagittarius B";
@@ -18,7 +18,7 @@ const BioName = styled.h1`
 `;
 
 const BioMeetingType = styled.h2`
-  font-size: 1.25em;
+  font-size: 1.125em;
   color: #008C9E;
 
   font-family: "Decimal A", "Decimal B";
