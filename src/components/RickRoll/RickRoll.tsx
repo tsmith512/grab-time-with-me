@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import ReactPlayer from 'react-player'
 
@@ -20,16 +20,26 @@ const ShareLinkContainer = styled.div`
   text-align: center;
 `;
 
-const RickRoll: React.FC = () => (
-  <Container>
-    <IntrinsicRatio>
-      <ReactPlayer url='https://www.youtube.com/watch?v=DLzxrzFCyOs' width="100%" height="100%" className="video-player" />
-    </IntrinsicRatio>
+const Button = styled.button`
+  display: block;
+  margin: 1em auto;
+`;
 
-    <ShareLinkContainer>
-      <Link to="/share/">Sorry About That</Link>
-    </ShareLinkContainer>
-  </Container>
-);
+const RickRoll: React.FC = () => {
+  const history = useHistory();
+  const handleClick = () => history.push('/share/');
+
+  return (
+    <Container>
+      <IntrinsicRatio>
+        <ReactPlayer url='https://www.youtube.com/watch?v=DLzxrzFCyOs' width="100%" height="100%" className="video-player" />
+      </IntrinsicRatio>
+
+      <ShareLinkContainer>
+        <Button onClick={handleClick}>Sorry About That</Button>
+      </ShareLinkContainer>
+    </Container>
+  );
+}
 
 export default RickRoll;

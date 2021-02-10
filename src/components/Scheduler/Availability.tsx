@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { SingleDatePicker } from 'react-dates';
 import styled from 'styled-components';
 
+import TimeSelector from './TimeSelector';
+
 const Container = styled.div`
   flex: 1 0 50%;
   border-left: 1px solid #ddd;
@@ -21,13 +23,25 @@ const Button = styled.button`
   margin: 1em auto;
 `;
 
+const Note = styled.p`
+  text-align: center;
+  font-size: 0.875em;
+  font-style:italic;
+  margin-top: -1.25em;
+  margin-bottom: 2em;
+`;
+
 const availabilityToday = (dateTest: moment.Moment) => {
   return dateTest.isSame(new Date, 'day');
 }
 
 const availabilityDates = (dateTest: moment.Moment) => {
+  // BLock out weekends
   const isWeekend = [0, 6].includes(parseInt(dateTest.format('d')));
+
+  // Give each day a 20% chance of being blocked randomly
   const isRandoDay = (Math.random() * 100) < 20;
+
   // Never block out today. Block out all weekend and random days.
   return (!availabilityToday(dateTest) && (isWeekend || isRandoDay));
 }
@@ -65,9 +79,10 @@ const Availability: React.FC = () => {
   else if (stage === "hour") {
     return (
       <Container>
-        <p>Availability Container</p>
-        <Button onClick={() => (setStage("day"))}>Test Placeholder: Pick a different day</Button>
-        <Link to="/meet/">Test Placeholder: Pick this time</Link>
+        <StageHeadline>Looking at {date?.format('dddd, MMM Do')}</StageHeadline>
+        <Note>Times shown in your system's local timezone.</Note>
+        <TimeSelector />
+        <Button onClick={() => (setStage("day"))}>Pick a Different Day</Button>
       </Container>
     );
   }

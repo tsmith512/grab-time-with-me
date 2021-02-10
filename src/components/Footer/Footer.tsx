@@ -21,7 +21,7 @@ const LogoBox = styled.div`
 const Header: React.FC = () => (
   <Container>
     <FooterText>
-      &copy; 2021 Grab Time With Me. Simple on-demand scheduling. <a href="https://tsmith.com">Learn More!</a>
+      &copy; 2021 Grab Time With Me. Simple on-demand scheduling for critical conversations. <a href="https://tsmith.com">Learn More!</a>
     </FooterText>
   </Container>
 );

@@ -70,7 +70,7 @@ const ShareAbout: React.FC = () => {
       <Panel>
 
         <Explanation>
-          Make a link for yourself!
+          Let your cold calls schedule a time with you, too!
         </Explanation>
 
         <Group>
