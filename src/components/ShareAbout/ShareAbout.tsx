@@ -31,19 +31,19 @@ const Panel = styled.div`
 const Headline = styled.h1`
   font-size: 3em;
   font-weight: bold;
-  color: #44749D;
+  color: #00587a;
 
-  font-family: "Inkwell Sans A", "Inkwell Sans B";
-  font-style: italic;
-  font-weight: 800;
+  font-family: "Sagittarius A", "Sagittarius B";
+  font-style: normal;
+  font-weight: 400;
 `;
 
 const Subhead = styled.h2`
   font-size: 1.25em;
   color: #999;
-  color: #44749D;
+  color: #00587a;
 
-  font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
+  font-family: "Decimal A", "Decimal B";
   font-style: normal;
   font-weight: 300;
 `;
@@ -53,7 +53,7 @@ const Explanation = styled.p`
   font-size: 1.25em;
   font-weight: bold;
 
-  font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
+  font-family: "Decimal A", "Decimal B";
   font-style: normal;
   font-weight: 500;
 `;
@@ -61,13 +61,13 @@ const Explanation = styled.p`
 const Group = styled.div`
   padding: 1em;
 
-  font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
+  font-family: "Decimal A", "Decimal B";
   font-style: normal;
   font-weight: 300;
   font-size: 1.25em;
 
   label {
-    color: #44749D;
+    color: #008891;
   }
 `;
 
@@ -76,14 +76,14 @@ const Input = styled.input`
   width: 100%;
   margin: 0.25em;
 
-  font-family: "Inkwell Sans A", "Inkwell Sans B";
+  font-family: "Decimal A", "Decimal B";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
 
   padding: 1em;
-  border: 1px solid #C6D4E1;
+  border: 1px solid #008891;
   border-radius: 3px;
-  color: #44749D;
+  color: #008891;
   background: #fff;
 `;
 
@@ -113,12 +113,12 @@ const ShareAbout: React.FC = () => {
 
         <Group>
           <label>Your Name
-            <Input type="text" value={name} onChange={(e) => (setName(e.target.value))} readOnly />
+            <Input type="text" value={name} onChange={(e) => (setName(e.target.value))} />
           </label>
         </Group>
         <Group>
           <label>Send this link
-            <Input type="text" value={window.location.origin + "/" + name } readOnly />
+            <Input type="text" value={window.location.origin + "/meet/" + name} readOnly />
           </label>
         </Group>
         <Group>

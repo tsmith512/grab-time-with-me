@@ -8,8 +8,8 @@ const Container = styled.header`
 `;
 
 const FooterText = styled.h1`
-  font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
-  font-style: normal;
+  font-family: "Decimal A", "Decimal B";
+  font-style: italic;
   font-weight: 300;
   color: #8E8981;
   text-shadow: 1px 1px 0 white;

@@ -19,9 +19,11 @@ const Headline = styled.h1`
   font-size: 3em;
   letter-spacing: -1px;
 
-  font-family: "Inkwell Sans A", "Inkwell Sans B";
-  font-style: italic;
-  font-weight: 800;
+  color: #008891;
+
+  font-family: "Sagittarius A", "Sagittarius B";
+  font-style: normal;
+  font-weight: 400;
 `;
 
 const LogoBox = styled.div`

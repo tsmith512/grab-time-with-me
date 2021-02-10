@@ -17,7 +17,7 @@ const StageHeadline = styled.p`
   font-size: 1.25em;
   margin: 1em;
 
-  font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
+  font-family: "Decimal A", "Decimal B";
   font-style: normal;
   font-weight: 500;
 `;
@@ -33,8 +33,8 @@ const Note = styled.p`
   margin-top: -1.25em;
   margin-bottom: 2em;
 
-  font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
-  font-style: normal;
+  font-family: "Decimal A", "Decimal B";
+  font-style: italic;
   font-weight: 300;
 `;
 

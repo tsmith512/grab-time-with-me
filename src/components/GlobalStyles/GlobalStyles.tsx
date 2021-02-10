@@ -83,7 +83,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background: #EBE7E0;
+    background: #e7e7de;
     font-size: 1em;
     line-height: 1.375;
   }
@@ -149,19 +149,19 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .CalendarMonth_caption {
-    font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
+    font-family: "Decimal A", "Decimal B";
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
   }
 
   .CalendarMonth_table {
-    font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
+    font-family: "Decimal A", "Decimal B";
     font-style: normal;
     font-weight: 300;
   }
 
   .DayPicker_weekHeader {
-    font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
+    font-family: "Decimal A", "Decimal B";
     font-style: normal;
     font-weight: 300;
   }

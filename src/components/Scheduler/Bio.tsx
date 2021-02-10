@@ -10,18 +10,18 @@ const Container = styled.header`
 
 const BioName = styled.h1`
   font-size: 3em;
-  color: #44749D;
+  color: #00587a;
 
-  font-family: "Inkwell Sans A", "Inkwell Sans B";
-  font-style: italic;
-  font-weight: 800;
+  font-family: "Sagittarius A", "Sagittarius B";
+  font-style: normal;
+  font-weight: 400;
 `;
 
 const BioMeetingType = styled.h2`
   font-size: 1.25em;
-  color: #44749D;
+  color: #00587a;
 
-  font-family: "Ringside Compressed SSm A", "Ringside Compressed SSm B";
+  font-family: "Decimal A", "Decimal B";
   font-style: normal;
   font-weight: 300;
 `;
