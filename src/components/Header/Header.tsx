@@ -30,7 +30,7 @@ const Header: React.FC = () => (
     <LogoBox>
       <Logo />
     </LogoBox>
-    <Headline>Grab Time With</Headline>
+    <Headline>Grab Time With Me</Headline>
   </Container>
 );
 

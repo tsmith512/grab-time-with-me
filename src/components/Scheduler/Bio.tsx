@@ -9,13 +9,14 @@ const Container = styled.header`
 `;
 
 const BioName = styled.h1`
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bold;
+  color: #44749D;
 `;
 
 const BioMeetingType = styled.h2`
   font-size: 1.25em;
-  color: #999;
+  color: #44749D;
 `;
 
 const Bio: React.FC = () => {
@@ -25,7 +26,7 @@ const Bio: React.FC = () => {
   return (
     <Container>
       <BioName>{name}</BioName>
-      <BioMeetingType>Meeting Type Placeholder</BioMeetingType>
+      <BioMeetingType>Schedule a 30 minute follow-up</BioMeetingType>
     </Container>
   );
 }

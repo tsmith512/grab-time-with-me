@@ -7,7 +7,7 @@ import TimeSelector from './TimeSelector';
 
 const Container = styled.div`
   flex: 1 0 50%;
-  border-left: 1px solid #ddd;
+  border-left: 1px solid #BDB8AD;
   padding: 1em;
 `
 

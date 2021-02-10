@@ -83,7 +83,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background: #f2f2f2;
+    background: #EBE7E0;
     font-size: 1em;
     line-height: 1.375;
   }
@@ -115,6 +115,38 @@ const GlobalStyles = createGlobalStyle`
   .DayPicker {
     margin: 0 auto 1em auto;
     box-shadow: none;
+  }
+
+  .CalendarDay:hover,
+  .CalendarDay__highlighted_calendar:hover {
+    background: #44749D;
+    color: #fff;
+  }
+
+  .CalendarDay__blocked_calendar,
+  .CalendarDay__blocked_calendar:active,
+  .CalendarDay__blocked_calendar:hover {
+    background: #eee;
+    border-color: #ddd;
+    color: #999;
+  }
+
+  .CalendarDay__highlighted_calendar,
+  .CalendarDay__highlighted_calendar:active {
+    background: #C6D4E1;
+  }
+
+  .CalendarDay__selected,
+  .CalendarDay__selected:hover,
+  .CalendarDay__selected:active {
+    background: #E04D4D;
+    color: #fff;
+    border-color: #BF3B3B;
+  }
+
+  #day_input {
+    color: #44749D;
+    border-bottom-color: #44749D;
   }
 `;
 

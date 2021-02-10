@@ -10,7 +10,7 @@ const Container = styled.header`
 const FooterText = styled.h1`
   font-size: 0.875em;
   font-style: italic;
-  color: #666;
+  color: #8E8981;
   text-shadow: 1px 1px 0 white;
 `;
 

@@ -11,6 +11,17 @@ const Option = styled.button`
   margin: 0.5em auto;
   width: 12em;
   padding: 1em 0.5em;
+
+  border: 1px solid #44749D;
+  border-radius: 3px;
+  color: #44749D;
+  background: #EFF7FF;
+
+  &:hover {
+    background: #fff;
+    color: #E04D4D;
+    border-color: #E04D4D;
+  }
 `;
 
 const timesOptions = ["10:00am", "10:30am", "11:00am", "11:30am", "12:00pm", "12:30pm", "1:00pm", "1:30pm", "2:00pm", "2:30pm", "3:00pm", "3:30pm", "4:00pm"];

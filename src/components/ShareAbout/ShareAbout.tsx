@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Container = styled.div`
   background: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #BDB8AD;
   border-radius: 3px;
 
   display: flex;
@@ -24,18 +24,20 @@ const Panel = styled.div`
   padding: 1em;
 
   & + & {
-    border-left: 1px solid #ddd;
+    border-left: 1px solid #BDB8AD;
   }
 `;
 
 const Headline = styled.h1`
   font-size: 1.5em;
   font-weight: bold;
+  color: #44749D;
 `;
 
 const Subhead = styled.h2`
   font-size: 1.25em;
   color: #999;
+  color: #44749D;
 `;
 
 const Explanation = styled.p`
@@ -47,8 +49,8 @@ const Explanation = styled.p`
 const Group = styled.div`
   padding: 1em;
 
-  & + & {
-    border-top: 1px solid #eee;
+  label {
+    color: #44749D;
   }
 `;
 
@@ -56,10 +58,25 @@ const Input = styled.input`
   display: block;
   width: 100%;
   margin: 0.25em;
+
+  padding: 1em;
+  border: 1px solid #C6D4E1;
+  border-radius: 3px;
+  color: #44749D;
+  background: #fff;
 `;
+
+const Button = styled.button`
+  display: block;
+  margin: 1em auto;
+`;
+
 
 const ShareAbout: React.FC = () => {
   const [name, setName] = useState("Test");
+
+  const history = useHistory();
+  const handleClick = () => history.push('/');
 
   return (
     <Container>
@@ -84,7 +101,7 @@ const ShareAbout: React.FC = () => {
           </label>
         </Group>
         <Group>
-          <Link to="/">Start Over</Link>
+          <Button onClick={handleClick}>Start Over</Button>
         </Group>
       </Panel>
     </Container>
