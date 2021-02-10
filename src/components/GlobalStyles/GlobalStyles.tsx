@@ -93,6 +93,29 @@ const GlobalStyles = createGlobalStyle`
     top: 0;
     left: 0;
   }
+
+  .SingleDatePicker, .SingleDatePickerInput {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .SingleDatePicker_picker {
+    position: static;
+  }
+
+  .DateInput {
+    display: block;
+    margin: 0.25em auto;
+  }
+
+  .DateInput_fang {
+    display: none;
+  }
+
+  .DayPicker {
+    margin: 0 auto 1em auto;
+    box-shadow: none;
+  }
 `;
 
 export default GlobalStyles;
