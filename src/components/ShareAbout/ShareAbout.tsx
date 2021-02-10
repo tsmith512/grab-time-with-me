@@ -76,16 +76,25 @@ const Input = styled.input`
   display: block;
   width: 100%;
   margin: 0.25em;
+  padding: 1em;
 
   font-family: "Decimal A", "Decimal B";
   font-style: normal;
   font-weight: 300;
+  font-size: 0.75em;
 
-  padding: 1em;
-  border: 1px solid #00B4CC;
+
+
+  border: 1px solid #008C9E;
   border-radius: 3px;
-  color: #005F6B;
+  color: #008C9E;
   background: #fff;
+
+  &:focus {
+    border-color: #00DFFC;
+    box-shadow: 0 0 3px rgba(0,0,0,0.25);
+    outline: none;
+  }
 `;
 
 const Button = styled.button`
@@ -93,9 +102,11 @@ const Button = styled.button`
   margin: 1em auto;
 `;
 
+const makeURL = (input: string): string => (window.origin + '/i/' + encodeURI(input));
+
 
 const ShareAbout: React.FC = () => {
-  const [name, setName] = useState("Test");
+  const [name, setName] = useState("Bill Brock");
 
   const history = useHistory();
   const handleClick = () => history.push('/');
@@ -119,7 +130,7 @@ const ShareAbout: React.FC = () => {
         </Group>
         <Group>
           <label>Send this link
-            <Input type="text" value={window.location.origin + "/meet/" + name} readOnly />
+            <Input type="text" value={makeURL(name)} readOnly />
           </label>
         </Group>
         <Group>

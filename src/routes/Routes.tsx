@@ -10,7 +10,7 @@ const Routes: React.FC = () => {
       <Switch>
         <Route path="/meet/" component={Meet} />
         <Route path="/share/" component={Share} />
-        <Route path="/grab/:name" component={Start} />
+        <Route path="/i/:name" component={Start} />
         <Route path="/" component={Start} />
       </Switch>
     </BrowserRouter>
