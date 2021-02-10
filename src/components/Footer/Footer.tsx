@@ -11,8 +11,12 @@ const FooterText = styled.h1`
   font-family: "Decimal A", "Decimal B";
   font-style: italic;
   font-weight: 300;
-  color: #8E8981;
-  text-shadow: 1px 1px 0 white;
+  color: #343838;
+
+  a {
+    color: #008C9E;
+    text-decoration: none;
+  }
 `;
 
 const LogoBox = styled.div`

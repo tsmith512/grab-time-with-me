@@ -4,9 +4,6 @@ import styled from 'styled-components';
 import ReactPlayer from 'react-player'
 
 const Container = styled.div`
-  background: #fff;
-  border: 1px solid #BDB8AD;
-  border-radius: 3px;
 `;
 
 const IntrinsicRatio = styled.div`

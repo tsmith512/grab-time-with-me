@@ -16,10 +16,10 @@ const Container = styled.header`
 `;
 
 const Headline = styled.h1`
-  font-size: 3em;
+  font-size: 4.25em;
   letter-spacing: -1px;
 
-  color: #008891;
+  color: #008C9E;
 
   font-family: "Sagittarius A", "Sagittarius B";
   font-style: normal;

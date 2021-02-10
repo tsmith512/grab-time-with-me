@@ -83,7 +83,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background: #e7e7de;
+    background: #f9f9f9;
+    color: #343838;
     font-size: 1em;
     line-height: 1.375;
   }
@@ -123,8 +124,8 @@ const GlobalStyles = createGlobalStyle`
 
   .CalendarDay:hover,
   .CalendarDay__highlighted_calendar:hover {
-    background: #44749D;
-    color: #fff;
+    background: #00DFFC;
+    color: #005F6B;
   }
 
   .CalendarDay__blocked_calendar,
@@ -137,15 +138,15 @@ const GlobalStyles = createGlobalStyle`
 
   .CalendarDay__highlighted_calendar,
   .CalendarDay__highlighted_calendar:active {
-    background: #C6D4E1;
+    background: #FFE26C;
   }
 
   .CalendarDay__selected,
   .CalendarDay__selected:hover,
   .CalendarDay__selected:active {
-    background: #E04D4D;
+    background: #008C9E;
     color: #fff;
-    border-color: #BF3B3B;
+    border-color: #005F6B;
   }
 
   .CalendarMonth_caption {
@@ -167,8 +168,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   #day_input {
-    color: #44749D;
-    border-bottom-color: #44749D;
+    color: #005F6B;
+    border-bottom-color: #00B4CC;
   }
 `;
 

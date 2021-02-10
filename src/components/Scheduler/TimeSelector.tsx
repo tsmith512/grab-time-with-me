@@ -12,10 +12,10 @@ const Option = styled.button`
   width: 8em;
   padding: 0.75em 0.25em;
 
-  border: 1px solid #44749D;
+  border: 1px solid #008C9E;
   border-radius: 3px;
-  color: #44749D;
-  background: #EFF7FF;
+  color: #008C9E;
+  background: #fff;
 
   font-family: "Decimal A", "Decimal B";
   font-style: normal;
@@ -23,9 +23,9 @@ const Option = styled.button`
   font-size: 1.25em;
 
   &:hover {
-    background: #fff;
-    color: #E04D4D;
-    border-color: #E04D4D;
+    color: #00B4CC;
+    border-color: #00DFFC;
+    box-shadow: 0 0 3px rgba(0,0,0,0.25);
   }
 `;
 

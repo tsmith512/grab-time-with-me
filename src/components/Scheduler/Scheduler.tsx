@@ -6,8 +6,9 @@ import { default as Availability } from './Availability';
 
 const Container = styled.div`
   background: #fff;
-  border: 1px solid #BDB8AD;
+  border: 1px solid #00B4CC;
   border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.125);
 
   display: flex;
   flex-wrap: nowrap;

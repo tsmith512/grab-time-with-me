@@ -4,8 +4,9 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   background: #fff;
-  border: 1px solid #BDB8AD;
+  border: 1px solid #00B4CC;
   border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.125);
 
   display: flex;
   flex-wrap: nowrap;
@@ -24,14 +25,14 @@ const Panel = styled.div`
   padding: 1em;
 
   & + & {
-    border-left: 1px solid #BDB8AD;
+    border-left: 1px solid #00B4CC;
   }
 `;
 
 const Headline = styled.h1`
-  font-size: 3em;
+  font-size: 4em;
   font-weight: bold;
-  color: #00587a;
+  color: #008C9E;
 
   font-family: "Sagittarius A", "Sagittarius B";
   font-style: normal;
@@ -41,7 +42,7 @@ const Headline = styled.h1`
 const Subhead = styled.h2`
   font-size: 1.25em;
   color: #999;
-  color: #00587a;
+  color: #008C9E;
 
   font-family: "Decimal A", "Decimal B";
   font-style: normal;
@@ -67,7 +68,7 @@ const Group = styled.div`
   font-size: 1.25em;
 
   label {
-    color: #008891;
+    color: #008C9E;
   }
 `;
 
@@ -81,9 +82,9 @@ const Input = styled.input`
   font-weight: 300;
 
   padding: 1em;
-  border: 1px solid #008891;
+  border: 1px solid #00B4CC;
   border-radius: 3px;
-  color: #008891;
+  color: #005F6B;
   background: #fff;
 `;
 
