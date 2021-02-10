@@ -1,63 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
-
-const Container = styled.div`
-  background: #fff;
-  border: 1px solid #00B4CC;
-  border-radius: 3px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.125);
-
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: stretch;
-  align-items: stretch;
-`;
-
-const Panel = styled.div`
-  flex: 1 0 50%;
-  text-align: center;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  padding: 1em;
-
-  & + & {
-    border-left: 1px solid #00B4CC;
-  }
-`;
-
-const Headline = styled.h1`
-  font-size: 3.5em;
-  font-weight: bold;
-  color: #008C9E;
-
-  font-family: "Sagittarius A", "Sagittarius B";
-  font-style: normal;
-  font-weight: 400;
-`;
-
-const Subhead = styled.h2`
-  font-size: 1.125em;
-  color: #999;
-  color: #008C9E;
-
-  font-family: "Decimal A", "Decimal B";
-  font-style: normal;
-  font-weight: 300;
-`;
-
-const Explanation = styled.p`
-  margin: 1em auto;
-  font-size: 1.25em;
-  font-weight: bold;
-
-  font-family: "Decimal A", "Decimal B";
-  font-style: normal;
-  font-weight: 500;
-`;
+import { Container, Headline, Subhead, Panel, Button, SectionTitle, Note } from '../Elements';
 
 const Group = styled.div`
   padding: 1em;
@@ -97,13 +41,7 @@ const Input = styled.input`
   }
 `;
 
-const Button = styled.button`
-  display: block;
-  margin: 1em auto;
-`;
-
 const makeURL = (input: string): string => (window.origin + '/i/' + encodeURI(input));
-
 
 const ShareAbout: React.FC = () => {
   const [name, setName] = useState("Bill Brock");
@@ -119,9 +57,8 @@ const ShareAbout: React.FC = () => {
       </Panel>
       <Panel>
 
-        <Explanation>
-          Never give up on those cold callers. Make your own invite link.
-        </Explanation>
+        <SectionTitle>Never give up on those cold callers.</SectionTitle>
+        <Note>Customize your own invite link.</Note>
 
         <Group>
           <label>Your Name

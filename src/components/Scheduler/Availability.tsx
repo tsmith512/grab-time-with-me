@@ -4,39 +4,7 @@ import { SingleDatePicker } from 'react-dates';
 import styled from 'styled-components';
 
 import TimeSelector from './TimeSelector';
-
-const Container = styled.div`
-  flex: 1 0 50%;
-  border-left: 1px solid #00B4CC;
-  padding: 1em;
-`
-
-const StageHeadline = styled.p`
-  display: block;
-  text-align: center;
-  font-size: 1.25em;
-  margin: 1em;
-
-  font-family: "Decimal A", "Decimal B";
-  font-style: normal;
-  font-weight: 500;
-`;
-
-const Button = styled.button`
-  display: block;
-  margin: 1em auto;
-`;
-
-const Note = styled.p`
-  text-align: center;
-  font-size: 0.875em;
-  margin-top: -1.25em;
-  margin-bottom: 2em;
-
-  font-family: "Decimal A", "Decimal B";
-  font-style: italic;
-  font-weight: 300;
-`;
+import { Button, SectionTitle, Note } from '../Elements';
 
 const availabilityToday = (dateTest: moment.Moment) => {
   return dateTest.isSame(new Date, 'day');
@@ -61,8 +29,8 @@ const Availability: React.FC = () => {
 
   if (stage === "day") {
     return (
-      <Container>
-        <StageHeadline>Find a Day</StageHeadline>
+      <>
+        <SectionTitle>Find a Day</SectionTitle>
         <SingleDatePicker
           placeholder="Let's try for"
           date={date} // momentPropTypes.momentObj or null
@@ -79,18 +47,18 @@ const Availability: React.FC = () => {
         />
 
         <Button onClick={() => (setStage("hour"))} disabled={date === null}>Find a time</Button>
-      </Container>
+      </>
     );
   }
 
   else if (stage === "hour") {
     return (
-      <Container>
-        <StageHeadline>Looking at {date?.format('dddd, MMM Do')}</StageHeadline>
+      <>
+        <SectionTitle>Looking at {date?.format('dddd, MMM Do')}</SectionTitle>
         <Note>Times shown in your system's local timezone.</Note>
         <TimeSelector />
         <Button onClick={() => (setStage("day"))}>Pick a Different Day</Button>
-      </Container>
+      </>
     );
   }
 
