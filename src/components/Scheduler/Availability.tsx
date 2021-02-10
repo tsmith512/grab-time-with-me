@@ -3,19 +3,22 @@ import { Link } from 'react-router-dom';
 import { SingleDatePicker } from 'react-dates';
 import styled from 'styled-components';
 
-const goToTimes = () => {
-  alert('Next up: show list of times');
-}
-
 const Container = styled.div`
   flex: 1 0 50%;
   border-left: 1px solid #ddd;
+  padding: 1em;
 `
 
-const DateLabel = styled.p`
+const StageHeadline = styled.p`
+  display: block;
   text-align: center;
   font-size: 1.25em;
   margin: 1em;
+`;
+
+const Button = styled.button`
+  display: block;
+  margin: 1em auto;
 `;
 
 const availabilityToday = (dateTest: moment.Moment) => {
@@ -33,18 +36,18 @@ const availabilityDates = (dateTest: moment.Moment) => {
 
 const Availability: React.FC = () => {
   const [stage, setStage] = useState('day');
-  const [date, setDate] = useState(null);
-  const [focused, setFocus] = useState(true);
+  const [date, setDate] = useState<moment.Moment | null>(null);
 
   if (stage === "day") {
     return (
       <Container>
-        <DateLabel>Let's shoot for</DateLabel>
+        <StageHeadline>Find a Day</StageHeadline>
         <SingleDatePicker
+          placeholder="Let's try for"
           date={date} // momentPropTypes.momentObj or null
-          onDateChange={newDate => setDate(date)} // PropTypes.func.isRequired
-          focused={focused} // PropTypes.bool
-          onFocusChange={({ focused }) => setFocus(focused)} // PropTypes.func.isRequired
+          onDateChange={(newDate) => setDate(newDate)} // PropTypes.func.isRequired
+          focused={true}
+          onFocusChange={() => {}} // PropTypes.func.isRequired
           id="day_input" // PropTypes.string.isRequired,
           numberOfMonths={1}
           isDayBlocked={availabilityDates}
@@ -53,6 +56,8 @@ const Availability: React.FC = () => {
           noBorder
           hideKeyboardShortcutsPanel={true}
         />
+
+        <Button onClick={() => (setStage("hour"))} disabled={date === null}>Find a time</Button>
       </Container>
     );
   }
@@ -61,7 +66,7 @@ const Availability: React.FC = () => {
     return (
       <Container>
         <p>Availability Container</p>
-        <button onClick={() => (setStage("day"))}>Test Placeholder: Pick a different day</button>
+        <Button onClick={() => (setStage("day"))}>Test Placeholder: Pick a different day</Button>
         <Link to="/meet/">Test Placeholder: Pick this time</Link>
       </Container>
     );
