@@ -4,12 +4,12 @@ import styled from 'styled-components';
 import { Container, Headline, Subhead, Panel, Button, SectionTitle, Note } from '../Elements';
 
 const Group = styled.div`
-  padding: 1em;
+  margin: 0.5em 0;
 
   font-family: "Decimal A", "Decimal B";
   font-style: normal;
   font-weight: 300;
-  font-size: 1.25em;
+  font-size: 1em;
 
   label {
     color: #008C9E;
@@ -19,15 +19,14 @@ const Group = styled.div`
 const Input = styled.input`
   display: block;
   width: 100%;
-  margin: 0.25em;
+  margin: 0.25em auto;
+  max-width: 25em;
   padding: 1em;
 
   font-family: "Decimal A", "Decimal B";
   font-style: normal;
   font-weight: 300;
   font-size: 0.75em;
-
-
 
   border: 1px solid #008C9E;
   border-radius: 3px;

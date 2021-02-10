@@ -7,15 +7,20 @@ const Container = styled.header`
   text-align: center;
 `;
 
-const FooterText = styled.h1`
+const FooterText = styled.p`
   font-family: "Decimal A", "Decimal B";
   font-style: italic;
   font-weight: 300;
+  font-size: 0.75em;
   color: #343838;
 
   a {
     color: #008C9E;
     text-decoration: none;
+  }
+
+  @media screen and (min-width: 560px) {
+    font-size: 1em;
   }
 `;
 

@@ -5,7 +5,11 @@ const StyledSectionTitle = styled.p`
   display: block;
   text-align: center;
   font-size: 1.25em;
-  margin: 1em;
+  margin-bottom: 1em;
+
+  @media only screen and (min-width: 960px) {
+    margin-top: 1em;
+  }
 
   font-family: "Decimal A", "Decimal B";
   font-style: normal;

@@ -11,8 +11,10 @@ const StyledPanel = styled.div`
 
   padding: 1em;
 
-  & + & {
-    border-left: 1px solid #00B4CC;
+  @media only screen and (min-width: 960px) {
+    & + & {
+      border-left: 1px solid #00B4CC;
+    }
   }
 `;
 

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
 
 const TimeOptions = styled.div`
-  margin: 2em auto;
+  margin-bottom: 1em;
 `;
 
 const Option = styled.button`

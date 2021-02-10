@@ -41,7 +41,6 @@ const Availability: React.FC = () => {
           numberOfMonths={1}
           isDayBlocked={availabilityDates}
           isDayHighlighted={availabilityToday}
-          daySize={55}
           noBorder
           hideKeyboardShortcutsPanel={true}
         />

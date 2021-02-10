@@ -5,7 +5,7 @@ const StyledNote = styled.p`
   text-align: center;
   font-size: 1em;
   margin-top: -1.25em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 
   font-family: "Decimal A", "Decimal B";
   font-style: italic;

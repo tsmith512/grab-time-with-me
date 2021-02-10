@@ -8,8 +8,12 @@ import { GlobalStyles, Header, Footer } from './components';
 import { Routes } from './routes';
 
 const Container = styled.div`
-  margin: 1em auto;
+  margin: 1em;
   max-width: 60em;
+
+  @media only screen and (min-width: 960px) {
+    margin: 1em auto;
+  }
 `;
 
 function App() {
