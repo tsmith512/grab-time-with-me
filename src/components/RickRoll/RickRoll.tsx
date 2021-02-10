@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import ReactPlayer from 'react-player'
 
 const Container = styled.div`
   background: #fff;
@@ -8,18 +9,26 @@ const Container = styled.div`
   border-radius: 3px;
 `;
 
-const Headline = styled.h1`
-  font-size: 3em;
-  text-transform: upper-case;
-  letter-spacing: -1px;
-  margin: 2em auto;
+const IntrinsicRatio = styled.div`
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%;
+`;
+
+const ShareLinkContainer = styled.div`
+  padding: 1em;
   text-align: center;
 `;
 
 const RickRoll: React.FC = () => (
   <Container>
-    <Headline>Never Gonna Give You Up</Headline>
-    <Link to="/share/">Share / About</Link>
+    <IntrinsicRatio>
+      <ReactPlayer url='https://www.youtube.com/watch?v=DLzxrzFCyOs' width="100%" height="100%" className="video-player" />
+    </IntrinsicRatio>
+
+    <ShareLinkContainer>
+      <Link to="/share/">Sorry About That</Link>
+    </ShareLinkContainer>
   </Container>
 );
 

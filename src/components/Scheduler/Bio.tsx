@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useParams } from 'react-router-dom';
 
 const Container = styled.header`
   flex: 1 0 50%;
@@ -17,11 +18,16 @@ const BioMeetingType = styled.h2`
   color: #999;
 `;
 
-const Bio: React.FC = () => (
-  <Container>
-    <BioName>Name Placeholder</BioName>
-    <BioMeetingType>Meeting Type Placeholder</BioMeetingType>
-  </Container>
-);
+const Bio: React.FC = () => {
+  let { name } = useParams<{ name: string }>();
+  name = typeof(name) !== 'undefined' ? decodeURI(name).replace('+', ' ') : "Bill Brock";
+
+  return (
+    <Container>
+      <BioName>{name}</BioName>
+      <BioMeetingType>Meeting Type Placeholder</BioMeetingType>
+    </Container>
+  );
+}
 
 export default Bio;

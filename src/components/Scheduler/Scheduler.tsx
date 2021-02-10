@@ -15,7 +15,7 @@ const Container = styled.div`
   align-items: stretch;
 `;
 
-const Scheduler: React.FC = () => (
+const Scheduler: React.FC = (props) => (
   <Container>
     <Bio />
     <Availability />

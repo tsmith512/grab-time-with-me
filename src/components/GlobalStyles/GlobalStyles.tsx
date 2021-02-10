@@ -87,6 +87,12 @@ const GlobalStyles = createGlobalStyle`
     font-size: 1em;
     line-height: 1.375;
   }
+
+  .video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 `;
 
 export default GlobalStyles;
