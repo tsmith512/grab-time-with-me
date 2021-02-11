@@ -150,19 +150,19 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .CalendarMonth_caption {
-    font-family: "Decimal A", "Decimal B";
+    font-family: "Decimal A", "Decimal B", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 300;
   }
 
   .CalendarMonth_table {
-    font-family: "Decimal A", "Decimal B";
+    font-family: "Decimal A", "Decimal B", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 300;
   }
 
   .DayPicker_weekHeader {
-    font-family: "Decimal A", "Decimal B";
+    font-family: "Decimal A", "Decimal B", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 300;
   }

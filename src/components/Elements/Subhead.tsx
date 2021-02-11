@@ -6,7 +6,7 @@ const StyledSubhead = styled.h2`
   color: #999;
   color: #008C9E;
 
-  font-family: "Decimal A", "Decimal B";
+  font-family: "Decimal A", "Decimal B", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
 `;

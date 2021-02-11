@@ -17,7 +17,7 @@ const Option = styled.button`
   color: #008C9E;
   background: #fff;
 
-  font-family: "Decimal A", "Decimal B";
+  font-family: "Decimal A", "Decimal B", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 1.25em;

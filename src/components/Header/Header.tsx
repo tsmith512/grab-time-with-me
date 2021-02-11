@@ -30,7 +30,7 @@ const Headline = styled.h1`
   letter-spacing: -1px;
   color: #008C9E;
 
-  font-family: "Sagittarius A", "Sagittarius B";
+  font-family: "Sagittarius A", "Sagittarius B", "Helvetica Narrow", "Arial Narrow", sans-serif;
   font-style: normal;
   font-weight: 400;
 `;

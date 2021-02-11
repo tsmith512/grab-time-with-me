@@ -6,7 +6,7 @@ import { Container, Headline, Subhead, Panel, Button, SectionTitle, Note } from 
 const Group = styled.div`
   margin: 0.5em 0;
 
-  font-family: "Decimal A", "Decimal B";
+  font-family: "Decimal A", "Decimal B", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 1em;
@@ -23,7 +23,7 @@ const Input = styled.input`
   max-width: 25em;
   padding: 1em;
 
-  font-family: "Decimal A", "Decimal B";
+  font-family: "Decimal A", "Decimal B", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 0.75em;

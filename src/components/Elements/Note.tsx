@@ -7,7 +7,7 @@ const StyledNote = styled.p`
   margin-top: -1.25em;
   margin-bottom: 1em;
 
-  font-family: "Decimal A", "Decimal B";
+  font-family: "Decimal A", "Decimal B", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-weight: 300;
 `;

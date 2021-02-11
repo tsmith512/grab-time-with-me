@@ -8,7 +8,7 @@ const Container = styled.header`
 `;
 
 const FooterText = styled.p`
-  font-family: "Decimal A", "Decimal B";
+  font-family: "Decimal A", "Decimal B", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-weight: 300;
   font-size: 0.75em;

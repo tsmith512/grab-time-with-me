@@ -11,7 +11,7 @@ const StyledSectionTitle = styled.p`
     margin-top: 1em;
   }
 
-  font-family: "Decimal A", "Decimal B";
+  font-family: "Decimal A", "Decimal B", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
 `;
