@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Grab Time With Me",
+  "name": "Grab Time With Me. Simple on-demand scheduling for critical conversations.",
   "icons": [
     {
       "src": "favicon.ico",
