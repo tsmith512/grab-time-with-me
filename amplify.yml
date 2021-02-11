@@ -7,6 +7,9 @@ frontend:
     build:
       commands:
         - npm run build
+        - mkdir build/fonts
+        - wget https://tsmith-hfj-fonts.s3.amazonaws.com/grab-time-with-me/811202.zip
+        - unzip 811202.zip -d build/fonts/
   artifacts:
     baseDirectory: build
     files:
