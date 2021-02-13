@@ -10,6 +10,9 @@ frontend:
         - mkdir build/fonts
         - wget https://tsmith-hfj-fonts.s3.amazonaws.com/grab-time-with-me/811202.zip
         - unzip 811202.zip -d build/fonts/
+        # Testing a file deployment in CDK
+        - wget TEST_DEPLOYMENT_FILE
+        - cp test.txt build/
   artifacts:
     baseDirectory: build
     files:
