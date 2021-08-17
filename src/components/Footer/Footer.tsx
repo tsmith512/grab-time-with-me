@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.header`
+const Container = styled.footer`
   margin-top: 2em;
   margin-bottom: 2em;
   text-align: center;
@@ -28,7 +28,7 @@ const LogoBox = styled.div`
   margin-right: 1em;
 `;
 
-const Header: React.FC = () => (
+const Footer: React.FC = () => (
   <Container>
     <FooterText>
       &copy; 2021 Grab Time With Me. Simple on-demand scheduling for critical conversations. <a href="https://tsmith.com">Learn More!</a>
@@ -36,4 +36,4 @@ const Header: React.FC = () => (
   </Container>
 );
 
-export default Header;
+export default Footer;
