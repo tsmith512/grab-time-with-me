@@ -31,7 +31,7 @@ const LogoBox = styled.div`
 const Footer: React.FC = () => (
   <Container>
     <FooterText>
-      &copy; 2021 Grab Time With Me. Simple on-demand scheduling for critical conversations. <a href="https://tsmith.com">Learn More!</a>
+      &copy; 2021 Grab Time With Me. Simple on-demand scheduling for critical conversations. <a href="https://tsmith.com?utm_source=grabtimewithme&utm_medium=website&utm_campaign=grabtimewithme">Learn More!</a>
     </FooterText>
   </Container>
 );
