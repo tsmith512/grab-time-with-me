@@ -28,6 +28,7 @@ const playerOptions: Options = {
   width: '100%',
   playerVars: {
     autoplay: 0,
+    controls: 0,
   },
 };
 
