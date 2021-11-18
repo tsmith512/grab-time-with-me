@@ -40,10 +40,11 @@ const Input = styled.input`
   }
 `;
 
-const makeURL = (input: string): string => (window.origin + '/i/' + encodeURI(input));
+const encodeName = (input: string): string => (encodeURI(input.replace(' ', '+')));
+const makeURL = (input: string): string => (window.origin + '/i/' + encodeName(input));
 
 const ShareAbout: React.FC = () => {
-  const [name, setName] = useState("Bill Brock");
+  const [name, setName] = useState("Aaron Glenn");
 
   const history = useHistory();
   const handleClick = () => history.push('/');
