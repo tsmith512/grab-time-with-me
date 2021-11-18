@@ -6,5 +6,5 @@ if [ -z "$ASSETS_FOLDER" ]; then
 fi
 
 mkdir -p build/fonts
-wget -N $ASSETS_FOLDER/811202.zip
-unzip -o 811202.zip -d build/fonts/
+wget -N $ASSETS_FOLDER/835137.zip
+unzip -o 835137.zip -d build/fonts/
